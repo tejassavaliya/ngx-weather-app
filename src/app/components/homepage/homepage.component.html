@@ -1,0 +1,14 @@
+<app-page-header>
+  <h1 class="main-header">Weather App</h1>
+  <h2 class="sub-header">Shows weather in five European cities</h2>
+</app-page-header>
+
+<div class="city-cards">
+  <ng-container *appErrorGuard="citiesWeather$ | async; data as citiesWeather">
+    <app-city-weather-card *ngFor="let cityWeather of citiesWeather; trackBy: trackById"
+                          [weather]="cityWeather"
+                          [routerLink]="['/', cityWeather.name, 'forecast']"
+                          class="qa-city-weather-card">
+    </app-city-weather-card>
+  </ng-container>
+</div>

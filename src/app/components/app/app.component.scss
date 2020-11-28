@@ -1,0 +1,47 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+::ng-deep router-outlet + * {
+  margin-top: 64px;
+  flex: 1;
+
+  @media (max-width: $mat-toolbar-breakpoint) {
+    margin-top: 56px;
+  }
+}
+
+.app-name {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.mat-toolbar .mat-button {
+  margin-left: auto;
+
+  .mat-icon {
+    height: 26px;
+    width: 26px;
+  }
+}
+
+.mat-toolbar,
+.mat-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.mat-progress-bar {
+  top: 64px;
+
+  @media (max-width: $mat-toolbar-breakpoint) {
+    top: 56px;
+  }
+}

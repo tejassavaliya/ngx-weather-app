@@ -1,0 +1,21 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.hourly-forecast {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  padding: 0 20%;
+
+  app-timestamp-weather {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $screen-md) {
+    padding: 0;
+  }
+}
