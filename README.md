@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/26a2582b-e052-44bd-bb21-1a50817d025c/deploy-status)](https://app.netlify.com/sites/ngx-weather/deploys)
 # NgxWeatherApp
 
 This web application based on Angular 10 version, which represents a weather of European cities.
@@ -5,7 +6,7 @@ This web application based on Angular 10 version, which represents a weather of 
 - When you clicking on a Card, it navigates to another page, which displays a weather forecast for next 5 days for the selected city.
 
 ## Application Demo
-[Demo Link](https://demolink.com)
+[Demo Link](https://ngx-weather.netlify.app/)
 
 ## Development server
 
