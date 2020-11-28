@@ -5,7 +5,7 @@
     </div>
     <mat-card-title>{{ weather.name }} {{ weather.main.temp | number:'1.0-0' }}°C</mat-card-title>
     <mat-card-subtitle>Wind: {{ weather.wind.speed }} m/s</mat-card-subtitle>
-    <mat-card-subtitle>Sunrise: {{ weather.sys.sunrise | date : 'mediumTime'}} </mat-card-subtitle>
-    <mat-card-subtitle>Sunset: {{ weather.sys.sunset | date : 'mediumTime' }} </mat-card-subtitle>
+    <mat-card-subtitle>Sunrise: {{ (weather.sys.sunrise * 1000 ) | date : 'mediumTime'}} </mat-card-subtitle>
+    <mat-card-subtitle>Sunset: {{ (weather.sys.sunset * 1000 ) | date : 'mediumTime' }} </mat-card-subtitle>
   </mat-card-header>
 </mat-card>

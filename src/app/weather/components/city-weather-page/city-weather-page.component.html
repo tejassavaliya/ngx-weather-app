@@ -1,12 +1,12 @@
 <app-page-header>
-  <h1>Five Days forecast for {{ cityName }}</h1>
+  <h1>Five Days forecast for <span>{{ cityName }}</span></h1>
 </app-page-header>
 
-<div class="hourly-forecast" role="list">
+<div class="five-days-forecast" role="list">
   <ng-container *appErrorGuard="forecast; data as data">
     <ng-container *ngFor="let weather of forecast">
-      <app-forecast [weather]="weather" role="listitem" ></app-forecast>
-      <mat-divider></mat-divider>
+        <app-forecast [weather]="weather" role="listitem" ></app-forecast>
+        <mat-divider></mat-divider>
     </ng-container>
   </ng-container>
 </div>

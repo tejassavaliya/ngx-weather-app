@@ -1,10 +1,10 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { filter, map, pluck } from 'rxjs/operators';
 
 import { CityWeather } from '../models/city-weather.model';
 import { ForecastWeather } from '../models/forecast-weather.model';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { pluck } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -23,6 +23,9 @@ export class WeatherService {
     const params = { id: id.toString() };
     const list = this.http.get<{ list: ForecastWeather[] }>('forecast', { params }).pipe(
       pluck('list'),
+      map(data => {
+        return data && data.filter((item: ForecastWeather) => item.dt_txt.indexOf('09:00') > 0 );
+      })
     );
     return list;
   }

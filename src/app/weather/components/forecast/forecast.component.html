@@ -1,9 +1,14 @@
 <div class="date-time-wrapper">
-    <time class="date">{{ weather?.dt_txt.split(' ')[0] }}</time>
-    <time class="time">{{ weather?.dt_txt.split(' ')[1] }}</time>
+  <time class="time">{{ weather?.dt_txt | date: 'shortTime' }}</time>
+  <time class="date">{{ weather?.dt_txt | date : 'MMM d' }}</time>
+
   </div>
 
-  <app-weather-condition-icon [weatherCondition]="weather.weather[0]" size="2x"></app-weather-condition-icon>
+  <app-weather-condition-icon [weatherCondition]="weather.weather[0]" size="2x">
+    <span class="description">
+      {{weather.weather[0].description}}
+    </span>
+  </app-weather-condition-icon>
 
   <span class="temperature">{{ weather.main.temp  - 273.15 | number:'1.0-0' }}°</span>
   <span class="sea-level"><mat-icon>waves</mat-icon> {{ weather.main.sea_level / 10 }} Meter</span>

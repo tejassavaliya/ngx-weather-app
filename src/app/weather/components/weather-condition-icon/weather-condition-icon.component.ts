@@ -5,6 +5,7 @@ import { WeatherCondition } from '../../models/weather-condition.model';
 @Component({
   selector: 'app-weather-condition-icon',
   templateUrl: 'weather-condition-icon.component.html',
+  styleUrls: ['weather-condition-icon.component.scss']
 })
 export class WeatherConditionIconComponent {
   @Input()

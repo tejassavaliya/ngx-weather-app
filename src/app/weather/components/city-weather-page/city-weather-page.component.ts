@@ -7,7 +7,7 @@ import { ForecastWeather } from '../../models/forecast-weather.model';
   styleUrls: ['city-weather-page.component.scss'],
 })
 export class CityWeatherPageComponent {
-  forecast: ForecastWeather[] | Error = this.route.snapshot.data.forecast;
+  forecast: ForecastWeather[] = this.route.snapshot.data.forecast;
 
   constructor(private readonly route: ActivatedRoute) {}
 

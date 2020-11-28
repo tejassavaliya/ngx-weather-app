@@ -4,8 +4,12 @@
   display: flex;
   flex-direction: column;
 }
-
-.hourly-forecast {
+app-page-header {
+  span {
+    font-weight: 600;
+  }
+}
+.five-days-forecast {
   flex: 1;
   flex-direction: column;
   display: flex;
