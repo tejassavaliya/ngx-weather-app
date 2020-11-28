@@ -6,7 +6,7 @@ This web application based on Angular 10 version, which represents a weather of 
 - When you clicking on a Card, it navigates to another page, which displays a weather forecast for next 5 days for the selected city.
 
 ## Application Demo
-[Demo Link](https://ngx-weather.netlify.app/)
+### [https://ngx-weather.netlify.app/](https://ngx-weather.netlify.app/?target=_blank)
 
 ![Weather Application Demo](./weather-demo.gif)
 ## Development server
