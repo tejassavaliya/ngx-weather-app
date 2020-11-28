@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/26a2582b-e052-44bd-bb21-1a50817d025c/deploy-status)](https://ngx-weather.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/26a2582b-e052-44bd-bb21-1a50817d025c/deploy-status)](https://app.netlify.com/sites/ngx-weather/deploys)
 # NgxWeatherApp
 
 This web application based on Angular 10 version, which represents a weather of European cities.
