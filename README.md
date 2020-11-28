@@ -8,6 +8,7 @@ This web application based on Angular 10 version, which represents a weather of 
 ## Application Demo
 [Demo Link](https://ngx-weather.netlify.app/)
 
+![Weather Application Demo](./weather-demo.gif)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -15,7 +16,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Running unit tests
 
 Run `ng test` to execute the unit tests 
-![Test Case coverage](./weather-test-cases.gif)
+![Running Test Case with Coverage](./weather-test-case-run.gif)
 
 ## Build
 
