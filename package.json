@@ -1,15 +1,26 @@
 {
+  "homepage": "http://tejassavaliya.github.io/ngx-weather-app",
   "name": "ngx-weather-app",
-  "version": "1.0.0-0",
+  "version": "1.0.0",
   "author": "Tejas Savaliya <tejas14883@gmail.com",
+  "keywords": [
+    "angular-cli",
+    "angular",
+    "angular 10",
+    "weather", "angular-weather", "angular weather forecast",
+    "european five city weather"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --prod",
+    "predeploy": "ng build --prod --base-href 'http://tejassavaliya.github.io/ngx-weather-app'",
+    "deploy": "ngh --dir=dist/ngx-weather-app",
     "test": "ng test --watch",
     "test:once": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": false,
   "repository": {
