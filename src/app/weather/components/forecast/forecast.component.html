@@ -1,8 +1,7 @@
 <div class="date-time-wrapper">
-  <time class="time">{{ weather?.dt_txt | date: 'shortTime' }}</time>
   <time class="date">{{ weather?.dt_txt | date : 'MMM d' }}</time>
-
-  </div>
+  <time class="time">{{ weather?.dt_txt | date: 'shortTime' }}</time>
+</div>
 
   <app-weather-condition-icon [weatherCondition]="weather.weather[0]" size="2x">
     <span class="description">
